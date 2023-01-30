@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "mechatron",
+    "name": "Site-01-30_1509",
     "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
@@ -11,7 +11,7 @@
         "successColor": "#40b0bf",
         "infoColor": "#47b5ed",
         "warningColor": "#FFE161",
-        "dangerColor": "#2bda3c",
+        "dangerColor": "#ff9966",
         "mainFont": "Jost",
         "display1Font": "Jost",
         "display1Size": 4.6,
@@ -29,9 +29,7 @@
         "isAnimatedOnScroll": false,
         "isScrollToTopButton": false
       },
-      "additionalSetColors": [
-        "#2bda3c"
-      ]
+      "additionalSetColors": []
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "5.6.11",
@@ -42,45 +40,11 @@
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 26,
-    "versionPublish": "5.6.11",
     "imageResize": true,
+    "uniqCompNum": 4,
+    "versionPublish": "5.6.11",
     "screenshot": "screenshot.png",
-    "chatbutton": {
-      "phone": "+213550011192",
-      "message": "",
-      "size": "65px",
-      "backgroundColor": "#e5ddd5",
-      "position": "left",
-      "popupMessage": "Hi!\n\nType a message here. It will go straight to our phone! \n\nMECHATRON Team",
-      "showPopup": true,
-      "showOnIE": true,
-      "autoOpenTimeout": "15",
-      "headerColor": "#39847a",
-      "headerTitle": " Chat with us on WhatsApp!",
-      "placeholder": "Type here",
-      "zIndex": 10,
-      "enabled": true
-    },
-    "cssOptimize": true,
-    "lazyLoad": true,
-    "PWA": {
-      "enabled": true,
-      "name": "MECHATRON",
-      "icon": "@PROJECT_PATH@/assets/images/mechatron-1-1-512x512.png",
-      "themeColor": "#000000"
-    },
-    "favicon": false,
-    "mbrsiteDomain": "ufyyajb4my",
-    "robotsSwitcher": false,
-    "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
-    "siteUrl": false,
-    "cookiesAlert": false,
-    "gdpr": false,
-    "witsec-white-label": true,
-    "pwa-switcher": true,
-    "publishChangesOnly": false
+    "publishChangesOnly": true
   },
   "pages": {
     "index.html": {
@@ -1599,6 +1563,49 @@
                 "background-image": "url(@fallBackImage)"
               }
             },
+            ".video-wrapper iframe": {
+              "width": "100%"
+            },
+            ".mbr-section-title, .mbr-section-subtitle, .mbr-text": {
+              "text-align": "center"
+            }
+          },
+          "_name": "video2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video2\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"6\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"6\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Video\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background2.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>HOW THIS TECHNOLOGY WORK</b></h4>\n            <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0 mt-2\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\">Click on the video in this block to set the link to\n                your own video.</h5>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"col-12 col-md-{{textWidth}} video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://www.youtube.com/watch?v=ESmoz2Q7ruA&loop=1&autoplay=1\"></iframe>\n                </div>\n                <p class=\"mbr-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-text\">\n                    Video Description</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tus2ber5ID",
+          "_anchor": "video2-r",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
             ".bg-facebook when (@facebook)": {
               "background": "#1778f2",
               "color": "contrast(#1778f2)",
@@ -1829,187 +1836,6 @@
           "_params": {}
         },
         {
-          "alias": "Singa4real-usermanager/components",
-          "_isSecondary": true,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "*": {
-              "padding": "0",
-              "margin": "0",
-              "box-sizing": "border-box"
-            },
-            "body": {
-              "background-color": "#eee",
-              "height": "100vh",
-              "font-family": "'Poppins', sans-serif",
-              "background": "linear-gradient(to top, #ffffff 10%, rgba(93, 42, 141, 0.4) 90%) no-repeat"
-            },
-            ".wrapper": {
-              "max-width": "500px",
-              "border-radius": "10px",
-              "margin": "50px auto",
-              "padding": "30px 40px",
-              "box-shadow": "20px 20px 80px @Shad",
-              "z-index": "7000"
-            },
-            ".h2": {
-              "font-weight": "bold",
-              "color": "@Theme",
-              "font-style": "italic"
-            },
-            ".h4": {
-              "font-family": "'Poppins', sans-serif"
-            },
-            ".passshow": {
-              "padding": "0px !important"
-            },
-            ".input-field": {
-              "border-radius": "5px",
-              "padding": "5px",
-              "display": "flex",
-              "align-items": "center",
-              "cursor": "pointer",
-              "border": "1px solid @Theme",
-              "color": "@Theme"
-            },
-            ".input-field:hover": {
-              "color": "#7b4ca0",
-              "border": "1px solid #7b4ca0"
-            },
-            "input": {
-              "border": "none",
-              "outline": "none",
-              "box-shadow": "none",
-              "width": "100%",
-              "padding": "0px 2px",
-              "font-family": "'Poppins', sans-serif"
-            },
-            "select": {
-              "border": "none",
-              "outline": "none",
-              "box-shadow": "none",
-              "width": "100%",
-              "padding": "0px 2px",
-              "font-family": "'Poppins', sans-serif"
-            },
-            ".fa-eye-slash.btn": {
-              "border": "none",
-              "outline": "none",
-              "box-shadow": "none"
-            },
-            "a": {
-              "text-decoration": "none",
-              "color": "@Theme",
-              "font-weight": "700"
-            },
-            "a:hover": {
-              "text-decoration": "none",
-              "color": "#7b4ca0"
-            },
-            ".option": {
-              "position": "relative",
-              "padding-left": "30px",
-              "cursor": "pointer"
-            },
-            ".option label.text-muted": {
-              "display": "block",
-              "cursor": "pointer"
-            },
-            ".option input": {
-              "display": "none"
-            },
-            ".checkmark": {
-              "position": "absolute",
-              "top": "3px",
-              "left": "0",
-              "height": "20px",
-              "width": "20px",
-              "background-color": "#fff",
-              "border": "1px solid #ddd",
-              "border-radius": "50%",
-              "cursor": "pointer"
-            },
-            ".option input:checked ~ .checkmark:after": {
-              "display": "block"
-            },
-            ".option .checkmark:after": {
-              "content": "\"\"",
-              "width": "13px",
-              "height": "13px",
-              "display": "block",
-              "position": "absolute",
-              "top": "48%",
-              "left": "53%",
-              "border-radius": "50%",
-              "transform": "translate(-50%, -50%) scale(0)",
-              "transition": "300ms ease-in-out 0s"
-            },
-            ".option input[type=\"radio\"]:checked ~ .checkmark": {
-              "background": "#fff",
-              "transition": "300ms ease-in-out 0s",
-              "border": "1px solid @Theme"
-            },
-            ".option input[type=\"radio\"]:checked ~ .checkmark:after": {
-              "transform": "translate(-50%, -50%) scale(1)"
-            },
-            ".btn.btn-block": {
-              "border-radius": "20px",
-              "background-color": "@Theme",
-              "color": "#ffffff"
-            },
-            ".btn.btn-block:hover": {
-              "background-color": "#55268b e0"
-            },
-            "@media (max-width: 575px)": {
-              ".wrapper": {
-                "margin": "10px"
-              }
-            },
-            "@media (max-width: 424px)": {
-              ".wrapper": {
-                "padding": "30px 10px",
-                "margin": "5px"
-              },
-              ".option": {
-                "position": "relative",
-                "padding-left": "22px"
-              },
-              ".option label.text-muted": {
-                "font-size": "0.95rem"
-              },
-              ".checkmark": {
-                "position": "absolute",
-                "top": "2px"
-              },
-              ".option .checkmark:after": {
-                "top": "50%"
-              },
-              "#forgot": {
-                "font-size": "0.95rem"
-              }
-            },
-            "DIV": {
-              "text-align": "right"
-            }
-          },
-          "_name": "signup",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"mbr-section\" group=\"Form\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"Singa4real-mobicms, Singa4real-usermanager\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Sub Title\" name=\"showsubTitle\" checked=\"\">\n        <select title=\"Usermanger Plugin Type\" name=\"Upt\">\n            <option value=\"Basic\" selected=\"\">Basic</option>\n            <option value=\"Advance\">Advance</option>\n        </select>\n        <select title=\"Form Type\" name=\"Ftype\">\n            <option value=\"Login\">Login</option>\n            <option value=\"Signup\" selected=\"\">Signup</option>\n            <option value=\"Reset Password\">Reset Password</option>\n            <option value=\"Change Password\">Change Password</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Phone Number\" name=\"showPHONE\" condition=\"Ftype == 'Signup'\">\n        <input type=\"checkbox\" title=\"Show Gender\" name=\"showGENDER\" condition=\"Ftype == 'Signup'\" checked=\"\">\n        <input type=\"checkbox\" title=\"Enable/Disable Username field\" name=\"showUsername\" condition=\"Ftype == 'Signup'\">\n        <select title=\"Main Login field\" name=\"Mlf\" condition=\"Ftype == 'Login' || Ftype == 'Reset Password'\">\n            <option value=\"email\" selected=\"\">Email Address</option>\n            <option value=\"username\">Username</option>\n        </select>\n        <input type=\"color\" name=\"Theme\" title=\"Form Theme Color\" value=\"#400485\" selected=\"\">\n        <input type=\"color\" name=\"Shad\" title=\"Form Shadow Color\" value=\"#232323\" selected=\"\">\n        <input type=\"text\" title=\"Login Page Url\" name=\"LoginUrl\" value=\"login.html\">\n        <input type=\"text\" title=\"Signup Page Url\" name=\"SignupUrl\" value=\"signup.html\">\n        <input type=\"text\" title=\"Reset Page Url\" name=\"ResetUrl\" value=\"reset.html\">\n        <input type=\"text\" title=\"Change pass. Page Url\" name=\"ChangeUrl\" value=\"change.html\">\n        <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax=\"\" selected=\"\">\n        <input type=\"color\" title=\"Background Color\" value=\"#efefef\">\n        <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\n    <!-- End block parameters -->\n    </mbr-parameters> \n<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n  </div>\n  <div class=\"container-fluid\">\n    <div class=\"wrapper bg-white\" mbr-if=\"Ftype == 'Login'\">\n    <div class=\"h2 text-center mbr-fonts-style\" mbr-text=\"\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">Login</div>\n    <div class=\"h4 text-muted text-center pt-2  mbr-fonts-style\" mbr-text=\"\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-4\">Enter your login details</div>\n    <form class=\"pt-3\" mbr-class=\"{'usermanager_form': Upt == 'Basic', 'usermanager_advance_form': Upt == 'Advance'}\">\n        <div class=\"row\">\n                        <div hidden=\"hidden\" class=\"alert alert-success col-12 text-center\"></div>\n                        <div hidden=\"hidden\" class=\"alert alert-danger col-12 text-center\"></div>\n\t\t\t\t\t\t<input type=\"hidden\" name=\"form_name\" value=\"loginform\">\n                    </div>\n        <div class=\"form-group py-2\">\n            <div class=\"input-field\" mbr-if=\"Mlf == 'email'\">\n                 <span class=\"mbr-iconfont fas fa-fw fa-envelope p-2 pr-3\"></span> \n            <input type=\"text\" placeholder=\"Email Address\" name=\"email\" required=\"\">\n            </div>\n            <div class=\"input-field\" mbr-if=\"Mlf == 'username'\">\n                 <span class=\"mbr-iconfont fas fa-fw fa-user p-2 pr-3\"></span> \n            <input type=\"text\" placeholder=\"Username\" name=\"username\" required=\"\">\n            </div>\n        </div>\n        <div class=\"form-group py-1 pb-2\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-lock p-2 pr-3\"></span> <input type=\"password\" placeholder=\"Enter your Password\" name=\"password\" required=\"\" class=\"pass-input\"> <a href=\"#showpass\" class=\"passshow bg-white text-muted btn-show-pass\"> <span class=\"pass mbr-iconfont  far fa-fw fa-eye-slash\"></span> </a> </div>\n        </div>\n        <div class=\"d-flex align-items-start\">\n            <div class=\"remember\"><label class=\"option text-muted\"> Remember me <input type=\"radio\" name=\"radio\"> <span class=\"checkmark\"></span> </label> </div>\n            <div class=\"ml-auto ms-auto\"> <a href=\"{{ResetUrl}}\" id=\"forgot\">Forgot Password?</a> </div>\n        </div> \n        <div class=\"d-grid gap-2\">\n        <button class=\"btn btn-block text-center my-3 py-2 mainbtn\">Log in</button>\n        <a href=\"#loading\" class=\"btn btn-block text-center my-3 py-2 loadingbtn\" style=\"display: none\"><span class=\"fa fa-spinner  fa-pulse\"></span>&nbsp;&nbsp;Please wait..</a>\n        </div>\n        <div class=\"text-center pt-3 text-muted\"><span mbr-text=\"\">No account yet?</span> <a href=\"{{SignupUrl}}\">Sign up</a></div>\n    </form>\n</div>\n    \n    <div class=\"wrapper bg-white\" mbr-if=\"Ftype == 'Signup'\">\n    <div class=\"h2 text-center mbr-fonts-style\" mbr-text=\"\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">Signup</div>\n    <div class=\"h4 text-muted text-center mbr-fonts-style pt-2\" mbr-text=\"\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-7\">Enter your Your details</div>\n    <form class=\"pt-3\" mbr-class=\"{'usermanager_form': Upt == 'Basic', 'usermanager_advance_form': Upt == 'Advance'}\">\n        <div class=\"row\">\n                        <div hidden=\"hidden\" class=\"alert alert-success col-12 text-center\"></div>\n                        <div hidden=\"hidden\" class=\"alert alert-danger col-12 text-center\"></div>\n\t\t\t\t\t\t<input type=\"hidden\" name=\"form_name\" value=\"signupform\">\n                    </div>\n        <div class=\"form-group py-2\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-user p-2 pr-4\"></span> <input type=\"text\" name=\"fullname\" placeholder=\"Fullname\" required=\"\" class=\"\"> </div>\n        </div>\n        <div class=\"form-group py-2\" mbr-if=\"showGENDER\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-user-cog p-2 pr-4\"></span>\n             <select id=\"gender\" name=\"gender\" required=\"\" class=\"\">\n                            <option value=\"\">Choose your Gender</option>\n                            <option value=\"Male\">Male</option>\n                            <option value=\"Female\">Female</option>\n                            <option value=\"Others\">Others</option>\n                        </select>   \n                </div>\n        </div>\n        <div class=\"form-group py-2\" mbr-if=\"showPHONE\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-phone p-2 pr-4\"></span> <input type=\"text\" name=\"phone\" placeholder=\"Phone Number\" required=\"\" class=\"\"> </div>\n        </div>\n        <div class=\"form-group py-2\" mbr-if=\"showUsername\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-user-lock p-2 pr-4\"></span> <input type=\"text\" name=\"username\" placeholder=\"Username\" required=\"\" class=\"\"> </div>\n        </div>\n        <div class=\"form-group py-2\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-envelope p-2 pr-4\"></span> <input type=\"text\" name=\"email\" placeholder=\"Email Address\" required=\"\" class=\"\"> </div>\n        </div>\n        <div class=\"form-group py-1 pb-2\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-lock p-2 pr-4\"></span> <input type=\"password\" placeholder=\"Enter your Password\" name=\"password\" required=\"\" class=\"pass-input\"> <a href=\"#showpass\" class=\"bg-white text-muted btn-show-pass passshow\"> <span class=\"pass mbr-iconfont  far fa-fw fa-eye-slash\"></span> </a> </div>\n        </div>\n        <div class=\"d-flex align-items-start\">\n        </div> \n        <div class=\"d-grid gap-2\">\n        <button class=\"btn btn-block text-center my-3 py-2 mainbtn\">Create Account</button>\n        <a href=\"#loading\" class=\"btn btn-block text-center my-3 py-2 loadingbtn\" style=\"display: none\"><span class=\"fa fa-spinner  fa-pulse\"></span>&nbsp;&nbsp;Please wait..</a>\n        </div>\n        <div class=\"text-center pt-3 text-muted\"><span mbr-text=\"\">Do you have an account?</span> <a href=\"{{LoginUrl}}\">Login</a></div>\n    </form>\n</div>\n    \n    \n    <div class=\"wrapper bg-white\" mbr-if=\"Ftype == 'Reset Password'\">\n    <div class=\"h2 text-center  mbr-fonts-style\" mbr-text=\"\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">Reset</div>\n    <div class=\"h4 text-muted text-center pt-2  mbr-fonts-style\" mbr-text=\"\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-7\">Input your crediencials</div>\n    <form class=\"pt-3\" mbr-class=\"{'usermanager_form': Upt == 'Basic', 'usermanager_advance_form': Upt == 'Advance'}\">\n        <div class=\"row\">\n                        <div hidden=\"hidden\" class=\"alert alert-success col-12 text-center\"></div>\n                        <div hidden=\"hidden\" class=\"alert alert-danger col-12 text-center\"></div>\n\t\t\t\t\t\t<input type=\"hidden\" name=\"form_name\" value=\"forgotpassword\">\n                    </div>\n        <div class=\"form-group py-2\">\n            <div class=\"input-field\" mbr-if=\"Mlf == 'email'\">\n                 <span class=\"mbr-iconfont fas fa-fw fa-envelope p-2 pr-3\"></span> \n            <input type=\"text\" placeholder=\"Email Address\" name=\"email\" required=\"\">\n            </div>\n            <div class=\"input-field\" mbr-if=\"Mlf == 'username'\">\n                 <span class=\"mbr-iconfont fas fa-fw fa-user p-2 pr-3\"></span> \n            <input type=\"text\" placeholder=\"Username\" name=\"username\" required=\"\">\n            </div>\n        </div>\n        <div class=\"d-flex align-items-start\">\n            <div class=\"remember\">  </div>\n            <div class=\"ml-auto ms-auto\"> <a href=\"{{LoginUrl}}\" id=\"forgot\">I Remembered my login</a> </div>\n        </div>\n        <div class=\"d-grid gap-2\">\n        <button class=\"btn btn-block text-center my-3 py-2 mainbtn\">Reset Password</button>\n        <a href=\"#loading\" class=\"btn btn-block text-center my-3 py-2 loadingbtn\" style=\"display: none\"><span class=\"fa fa-spinner  fa-pulse\"></span>&nbsp;&nbsp;Please wait..</a>\n        </div>\n        <div class=\"text-center pt-3 text-muted\"><span mbr-text=\"\">No account yet? </span><a href=\"{{SignupUrl}}\">Sign up</a></div>\n    </form>\n</div>\n\n <div class=\"wrapper bg-white\" mbr-if=\"Ftype == 'Change Password'\">\n    <div class=\"h2 text-center mbr-fonts-style\" mbr-text=\"\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">Change Password</div>\n    <div class=\"h4 text-muted text-center pt-2  mbr-fonts-style\" mbr-text=\"\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-4\">Enter and repeat your new password</div>\n    <form class=\"pt-3\" mbr-class=\"{'usermanager_form': Upt == 'Basic', 'usermanager_advance_form': Upt == 'Advance'}\">\n        <div class=\"row\">\n                        <div hidden=\"hidden\" class=\"alert alert-success col-12 text-center\"></div>\n                        <div hidden=\"hidden\" class=\"alert alert-danger col-12 text-center\"></div>\n\t\t\t\t\t\t<input type=\"hidden\" name=\"form_name\" value=\"changepassform\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"uid\" id=\"uid\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"acctcode\" id=\"acctcode\">\n                    </div>\n        \n        <div class=\"form-group py-1 pb-2\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-lock p-2 pr-3\"></span> <input type=\"password\" placeholder=\"Enter a new password\" name=\"password\" required=\"\" class=\"pass-input\"> <a href=\"#showpass\" class=\"passshow bg-white text-muted btn-show-pass\"> <span class=\"pass mbr-iconfont  far fa-fw fa-eye-slash\"></span> </a> </div>\n        </div>\n        <div class=\"form-group py-1 pb-2\">\n            <div class=\"input-field\"> <span class=\"mbr-iconfont fas fa-fw fa-lock p-2 pr-3\"></span> <input type=\"password\" placeholder=\"Retype the new password\" name=\"rpassword\" required=\"\" class=\"pass-input\"> <a href=\"#showpass\" class=\"passshow bg-white text-muted btn-show-pass\"> </a> </div>\n        </div>\n        <div class=\"d-flex align-items-start\">\n            \n            <div class=\"ml-auto ms-auto\"> <a href=\"{{LoginUrl}}\" id=\"forgot\">I remembered my password?</a> </div>\n        </div> \n        <div class=\"d-grid gap-2\">\n        <button class=\"btn btn-block text-center my-3 py-2 mainbtn\">Change Password</button>\n        <a href=\"#loading\" class=\"btn btn-block text-center my-3 py-2 loadingbtn\" style=\"display: none\"><span class=\"fa fa-spinner  fa-pulse\"></span>&nbsp;&nbsp;Please wait..</a>\n        </div>\n        <div class=\"text-center pt-3 text-muted\"><span mbr-text=\"\">No account yet?</span> <a href=\"{{SignupUrl}}\">Sign up</a></div>\n    </form>\n</div>\n</div>\n</section>",
-          "_cid": "turZwDXRTz",
-          "_anchor": "signup-o",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
@@ -2051,29 +1877,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "overflow": "hidden"
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2025 Mechatron Mostaganem - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tus00YVQAH",
-          "_anchor": "footer7-p",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         },
         {
@@ -2200,13 +2003,36 @@
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section data-bs-version=\"5.1\" mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr>\n\n      \n     <header>Float Flags Menu 1.4.6</header>\n\n       <input type=\"checkbox\" title=\"Show Flags Bar\" name=\"Flagsbar\" checked> \n              <input type=\"checkbox\" title=\"Bar Position\" name=\"Flagspos\" condition=\"Flagsbar\" checked>    \n        <input type=\"range\" inline title=\"Padding\" name=\"paddingflag\" min=\"1\" max=\"30\" step=\"1\" value=\"3\" condition=\"Flagsbar\">\n        <input type=\"range\" inline title=\"Padding Border\" name=\"paddingleft\" min=\"1\" max=\"30\" step=\"1\" value=\"11\" condition=\"Flagsbar\">\n        <input type=\"range\" inline title=\"Top\" name=\"topflag\" min=\"1\" max=\"100\" step=\"1\" value=\"45\" condition=\"Flagsbar\">\n   \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Color</header>\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"Flagsbar\" checked>\n          <input type=\"color\" title=\"Button Bckg Color\" name=\"borderColor\" value=\"#000000\" condition=\"Flagsbar\"> \n      \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Language</header>\n <input type=\"checkbox\" title=\"English\" name=\"langgb\" condition=\"Flagsbar\" checked>\n  <input type=\"checkbox\" title=\"French\" name=\"langfr\" condition=\"Flagsbar\" checked>\n   <input type=\"checkbox\" title=\"Dutch\" name=\"langnl\" condition=\"Flagsbar\" checked>\n    <input type=\"checkbox\" title=\"German\" name=\"langde\" condition=\"Flagsbar\" checked>\n\t\t <input type=\"checkbox\" title=\"Spanish\" name=\"langes\" condition=\"Flagsbar\" checked>\n                  \t\t <input type=\"checkbox\" title=\"Portugese\" name=\"langpt\" condition=\"Flagsbar\" checked>\n          <input type=\"checkbox\" title=\"Italian\" name=\"langit\" condition=\"Flagsbar\" checked>\n              <input type=\"checkbox\" title=\"Greek\" name=\"langgr\" condition=\"Flagsbar\" checked> \n                  <input type=\"checkbox\" title=\"Urdu\" name=\"langur\" condition=\"Flagsbar\" checked> \n     <input type=\"checkbox\" title=\"Russian\" name=\"langru\" condition=\"Flagsbar\" checked>\n     \n          <input type=\"checkbox\" title=\"China\" name=\"langzhtw\" condition=\"Flagsbar\" checked>\n     <input type=\"checkbox\" title=\"Japan\" name=\"langja\" condition=\"Flagsbar\" checked>\n     <input type=\"checkbox\" title=\"Korea\" name=\"langkr\" condition=\"Flagsbar\" checked>\n                  \n      <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">WARNING</header>\n    <header condition=\"Flagsbar\">The start page must be in english, if your site is not en english, you must with code editor modify the line 49 and and replace \"en\" by your language code ( es, fr, de, ru,nl )</header>\n      \n\n        \n        \n    </mbr-parameters> \n    \n    \n    \n    \n  <script type=\"text/javascript\">\n  function googleTranslateElementInit() {\n    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');\n  }\n</script>\n\n  <script type=\"text/javascript\">\nvar toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];\nif(toolBar !== undefined) {\n    toolBar.style.display  = 'none';\n    document.body.style.top = '0px';\n}\n</script>\n\n\n  <script src=\"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>\n\n<style>\n.nav-right {\n  float: left !important;\n  position: relative;\n}\n\n#google_translate_element {\n  display: none;\n}\n\n.goog-te-banner {\n  display: none;\n}\n\n.2.container {\n  display: none;\n}\n\n.skiptranslate {\n  display: none;\n  bottom: 0px;\n  position: relative;\n}\n\n.goog-te-spinner-pos {\n  display: none !important;\n}\n\n.goog-logo-link{display: none !important;}\n.goog-te-gadget{height: 28px !important;  overflow: hidden;}\n\n.goog-te-banner-frame.skiptranslate {display: none !important;} \nbody { top: 0px !important; }\n\n\nbody {\nbody{ top: 0 !important;}\n.goog-te-banner-frame{display: none !important;}\n}\n\n.goog-tooltip {\n    display: none !important;\n}\n.goog-tooltip:hover {\n    display: none !important;\n}\n.goog-text-highlight {\n    background-color: transparent !important;\n    border: none !important; \n    box-shadow: none !important;\n}\n\n#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} \n\n\n\n</style>\n\n<div class=\"icon-bar\" mbr-if=\"Flagsbar\">\n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(en)';location.reload();\" alt=\"EN\" title=\"EN\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-gb flag-icon\" mbr-if=\"langgb\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(fr)';location.reload();\" alt=\"FR\" title=\"FR\" class=\"flag\" mbr-if=\"langfr\"><i class=\"flag-icon-bl flag-icon\" mbr-if=\"langfr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(nl)';location.reload();\" alt=\"NL\" title=\"NL\" class=\"flag\" mbr-if=\"langnl\"><i class=\"flag-icon-nl flag-icon\" mbr-if=\"langnl\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(de)';location.reload();\" alt=\"DE\" title=\"DE\" class=\"flag\" mbr-if=\"langde\"><i class=\"flag-icon-de flag-icon\" mbr-if=\"langde\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(es)';location.reload();\" alt=\"ES\" title=\"ES\" class=\"flag\" mbr-if=\"langes\"><i class=\"flag-icon-es flag-icon\" mbr-if=\"langes\"></i></a>\n \t \t \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(pt)';location.reload();\" alt=\"PT\" title=\"PT\" class=\"flag\" mbr-if=\"langpt\"><i class=\"flag-icon-pt flag-icon\" mbr-if=\"langpt\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(it)';location.reload();\" alt=\"IT\" title=\"IT\" class=\"flag\" mbr-if=\"langit\"><i class=\"flag-icon-it flag-icon\" mbr-if=\"langit\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(el)';location.reload();\" alt=\"GR\" title=\"GR\" class=\"flag\" mbr-if=\"langgr\"><i class=\"flag-icon-gr flag-icon\" mbr-if=\"langgr\"></i></a> \n \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ur)';location.reload();\" alt=\"UR\" title=\"UR\" class=\"flag\" mbr-if=\"langur\"><i class=\"flag-icon-pk flag-icon\" mbr-if=\"langur\"></i></a>  \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ru)';location.reload();\" alt=\"RU\" title=\"RU\" class=\"flag\" mbr-if=\"langru\"><i class=\"flag-icon-ru flag-icon\" mbr-if=\"langru\"></i></a> \n \t\n \t     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(zh-CN)';location.reload();\" alt=\"CN\" title=\"CN\" class=\"flag\" mbr-if=\"langzhtw\"><i class=\"flag-icon-cn flag-icon\" mbr-if=\"langzhtw\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ja)';location.reload();\" alt=\"JP\" title=\"JP\" class=\"flag\" mbr-if=\"langja\"><i class=\"flag-icon-jp flag-icon\" mbr-if=\"langja\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ko)';location.reload();\" alt=\"KR\" title=\"KR\" class=\"flag\" mbr-if=\"langkr\"><i class=\"flag-icon-kr flag-icon\" mbr-if=\"langkr\"></i></a> \n\n\n</div>\n\n  \n \n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background: linear-gradient( #807e7f, #f1f1f1, #807e7f);\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br><div class=\"imgtest2\"></div><br>Version 1.4.6<br>\n        Click the \"gear\" icon to change the layout of the flags bar. This text/logo will be removed on preview/publish.<br>You need the following extension for flags https://witsec.nl/extension-additional-icons.html#flag-icons<br><br><div class=\"imgtest\"></div><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr>\n\n      \n     <header>Float Flags Menu 1.4.6</header>\n\n       <input type=\"checkbox\" title=\"Show Flags Bar\" name=\"Flagsbar\" checked> \n              <input type=\"checkbox\" title=\"Bar Position\" name=\"Flagspos\" condition=\"Flagsbar\" checked>    \n        <input type=\"range\" inline title=\"Padding\" name=\"paddingflag\" min=\"1\" max=\"30\" step=\"1\" value=\"8\" condition=\"Flagsbar\">\n        <input type=\"range\" inline title=\"Padding Border\" name=\"paddingleft\" min=\"1\" max=\"30\" step=\"1\" value=\"28\" condition=\"Flagsbar\">\n        <input type=\"range\" inline title=\"Top\" name=\"topflag\" min=\"1\" max=\"100\" step=\"1\" value=\"32\" condition=\"Flagsbar\">\n   \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Color</header>\n\t\t <input type=\"checkbox\" title=\"Background Transparent\" name=\"transp\" condition=\"Flagsbar\">\n          <input type=\"color\" title=\"Button Bckg Color\" name=\"borderColor\" value=\"#ff6666\" condition=\"Flagsbar\"> \n      \n     <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">Language</header>\n <input type=\"checkbox\" title=\"English\" name=\"langgb\" condition=\"Flagsbar\" checked>\n  <input type=\"checkbox\" title=\"French\" name=\"langfr\" condition=\"Flagsbar\" checked>\n   <input type=\"checkbox\" title=\"Dutch\" name=\"langnl\" condition=\"Flagsbar\">\n    <input type=\"checkbox\" title=\"German\" name=\"langde\" condition=\"Flagsbar\" checked>\n\t\t <input type=\"checkbox\" title=\"Spanish\" name=\"langes\" condition=\"Flagsbar\" checked>\n                  \t\t <input type=\"checkbox\" title=\"Portugese\" name=\"langpt\" condition=\"Flagsbar\">\n          <input type=\"checkbox\" title=\"Italian\" name=\"langit\" condition=\"Flagsbar\" checked>\n              <input type=\"checkbox\" title=\"Greek\" name=\"langgr\" condition=\"Flagsbar\"> \n                  <input type=\"checkbox\" title=\"Urdu\" name=\"langur\" condition=\"Flagsbar\"> \n     <input type=\"checkbox\" title=\"Russian\" name=\"langru\" condition=\"Flagsbar\">\n     \n          <input type=\"checkbox\" title=\"China\" name=\"langzhtw\" condition=\"Flagsbar\">\n     <input type=\"checkbox\" title=\"Japan\" name=\"langja\" condition=\"Flagsbar\">\n     <input type=\"checkbox\" title=\"Korea\" name=\"langkr\" condition=\"Flagsbar\">\n                  \n      <hr condition=\"Flagsbar\"><header condition=\"Flagsbar\">WARNING</header>\n    <header condition=\"Flagsbar\">The start page must be in english, if your site is not en english, you must with code editor modify the line 49 and and replace \"en\" by your language code ( es, fr, de, ru,nl )</header>\n      \n\n        \n        \n    </mbr-parameters> \n    \n    \n    \n    \n  <script type=\"text/javascript\">\n  function googleTranslateElementInit() {\n    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');\n  }\n</script>\n\n  <script type=\"text/javascript\">\nvar toolBar = document.getElementsByClassName('goog-te-banner-frame skiptranslate')[0];\nif(toolBar !== undefined) {\n    toolBar.style.display  = 'none';\n    document.body.style.top = '0px';\n}\n</script>\n\n\n  <script src=\"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>\n\n<style>\n.nav-right {\n  float: left !important;\n  position: relative;\n}\n\n#google_translate_element {\n  display: none;\n}\n\n.goog-te-banner {\n  display: none;\n}\n\n.2.container {\n  display: none;\n}\n\n.skiptranslate {\n  display: none;\n  bottom: 0px;\n  position: relative;\n}\n\n.goog-te-spinner-pos {\n  display: none !important;\n}\n\n.goog-logo-link{display: none !important;}\n.goog-te-gadget{height: 28px !important;  overflow: hidden;}\n\n.goog-te-banner-frame.skiptranslate {display: none !important;} \nbody { top: 0px !important; }\n\n\nbody {\nbody{ top: 0 !important;}\n.goog-te-banner-frame{display: none !important;}\n}\n\n.goog-tooltip {\n    display: none !important;\n}\n.goog-tooltip:hover {\n    display: none !important;\n}\n.goog-text-highlight {\n    background-color: transparent !important;\n    border: none !important; \n    box-shadow: none !important;\n}\n\n#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} \n\n\n\n</style>\n\n<div class=\"icon-bar\" mbr-if=\"Flagsbar\">\n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(en)';location.reload();\" alt=\"EN\" title=\"EN\" class=\"flag\" mbr-if=\"langgb\"><i class=\"flag-icon-gb flag-icon\" mbr-if=\"langgb\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(fr)';location.reload();\" alt=\"FR\" title=\"FR\" class=\"flag\" mbr-if=\"langfr\"><i class=\"flag-icon-bl flag-icon\" mbr-if=\"langfr\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(nl)';location.reload();\" alt=\"NL\" title=\"NL\" class=\"flag\" mbr-if=\"langnl\"><i class=\"flag-icon-nl flag-icon\" mbr-if=\"langnl\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(de)';location.reload();\" alt=\"DE\" title=\"DE\" class=\"flag\" mbr-if=\"langde\"><i class=\"flag-icon-de flag-icon\" mbr-if=\"langde\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(es)';location.reload();\" alt=\"ES\" title=\"ES\" class=\"flag\" mbr-if=\"langes\"><i class=\"flag-icon-es flag-icon\" mbr-if=\"langes\"></i></a>\n \t \t \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(pt)';location.reload();\" alt=\"PT\" title=\"PT\" class=\"flag\" mbr-if=\"langpt\"><i class=\"flag-icon-pt flag-icon\" mbr-if=\"langpt\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(it)';location.reload();\" alt=\"IT\" title=\"IT\" class=\"flag\" mbr-if=\"langit\"><i class=\"flag-icon-it flag-icon\" mbr-if=\"langit\"></i></a> \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(el)';location.reload();\" alt=\"GR\" title=\"GR\" class=\"flag\" mbr-if=\"langgr\"><i class=\"flag-icon-gr flag-icon\" mbr-if=\"langgr\"></i></a> \n \t \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ur)';location.reload();\" alt=\"UR\" title=\"UR\" class=\"flag\" mbr-if=\"langur\"><i class=\"flag-icon-pk flag-icon\" mbr-if=\"langur\"></i></a>  \n \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ru)';location.reload();\" alt=\"RU\" title=\"RU\" class=\"flag\" mbr-if=\"langru\"><i class=\"flag-icon-ru flag-icon\" mbr-if=\"langru\"></i></a> \n \t\n \t     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(zh-CN)';location.reload();\" alt=\"CN\" title=\"CN\" class=\"flag\" mbr-if=\"langzhtw\"><i class=\"flag-icon-cn flag-icon\" mbr-if=\"langzhtw\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ja)';location.reload();\" alt=\"JP\" title=\"JP\" class=\"flag\" mbr-if=\"langja\"><i class=\"flag-icon-jp flag-icon\" mbr-if=\"langja\"></i></a> \n     \t<a href=\"javascript:void()\" onclick=\"window.location.hash='#googtrans(ko)';location.reload();\" alt=\"KR\" title=\"KR\" class=\"flag\" mbr-if=\"langkr\"><i class=\"flag-icon-kr flag-icon\" mbr-if=\"langkr\"></i></a> \n\n\n</div>\n\n  \n \n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background: linear-gradient( #807e7f, #f1f1f1, #807e7f);\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br><div class=\"imgtest2\"></div><br>Version 1.4.6<br>\n        Click the \"gear\" icon to change the layout of the flags bar. This text/logo will be removed on preview/publish.<br>You need the following extension for flags https://witsec.nl/extension-additional-icons.html#flag-icons<br><br><div class=\"imgtest\"></div><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
           "_cid": "2kpdcx1ZDS",
           "_anchor": "design-block-2kpdcx1ZDS",
           "_sourceTheme": "mobirise5",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2025 Mechatron Mostaganem - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tus00YVQAH",
+          "_anchor": "footer7-p",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
           "_params": {}
         }
       ]
